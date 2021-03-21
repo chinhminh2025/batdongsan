@@ -1,0 +1,34 @@
+	<div class="container">
+		<div class="card">
+			<div class="container-fliud">
+				<div class="wrapper row">
+					<div class="preview col-md-6">
+						
+						<div class="preview-pic tab-content">
+						  <div class="tab-pane active" id="pic-1"><img src="{{project.image}}" /></div>						
+						</div>
+						<ul class="preview-thumbnail nav nav-tabs">
+						  <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="{{project.image}}" /></a></li>
+						  <li><a data-target="#pic-2" data-toggle="tab"><img src="{{project.image}}" /></a></li>
+						  <li><a data-target="#pic-3" data-toggle="tab"><img src="{{project.image}}" /></a></li>
+						  <li><a data-target="#pic-4" data-toggle="tab"><img src="{{project.image}}" /></a></li>
+						  <li><a data-target="#pic-5" data-toggle="tab"><img src="{{project.image}}" /></a></li>
+						</ul>
+						
+					</div>
+					<div class="details col-md-6">
+						<h3 class="product-title">{{project.name}}</h3>						
+						<h6 class="product-description">{{project.address}}</h6>
+						<h5 class="price">Giá : {{project.total_price}}</h5>					
+						<h6 class="price">Giá/m2 : {{project.price_m2}}</h6>
+                        <h6>Chủ đầu tư: {{project.investor}}</h6>
+                        <h6>Mật độ xây dựng: {{project.building_density}}</h6>	
+                        <h6>Diện tích khu đất: {{project.area}}</h6>		
+                        <h6>Trạng thái: {{project.status}}</h6>
+												
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
