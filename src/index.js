@@ -11,7 +11,7 @@ const db = require('./config/db');
 db.connect();
 
 const app = express();
-const port = 4000;
+const PORT = 4000;
 
 // Use static folder
 app.use(express.static(path.join(__dirname, 'public')));
@@ -44,6 +44,6 @@ app.set('views', path.join(__dirname, 'resources', 'views'));
 // Routes init
 route(app);
 
-app.listen(port, () =>
-    console.log(`App listening at http://localhost:${port}`),
+app.listen(PORT, () =>
+    console.log(`App listening at http://localhost:${PORT}`),
 );
